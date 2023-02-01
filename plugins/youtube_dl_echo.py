@@ -11,7 +11,7 @@ from helper_funcs.display_progress import humanbytes, ContentLength
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-@@Client.on_message(filters.regex(pattern=".*http.*"))
+@Client.on_message(filters.regex(pattern=".*http.*"))
 async def echo(bot, message):
     await AddUser(bot, message)
     info_msg = await message.reply_text("<b>Processing... ⏳</b>", quote=True)
