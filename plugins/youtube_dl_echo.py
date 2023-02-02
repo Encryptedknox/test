@@ -5,6 +5,11 @@ import os, re, time, asyncio, json, random, string
 from config import Config
 from database.adduser import AddUser
 from translation import Translation
+from plugins.forcesub import handle_force_subscribe
+from pyrogram.errors import UserNotParticipant
+from helper_func.ran_text import random_char
+from database.database import db
+from database.add import AddUser
 from pyrogram import filters
 from pyrogram import Client
 from helper_funcs.display_progress import humanbytes, ContentLength
