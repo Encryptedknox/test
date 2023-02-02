@@ -7,7 +7,7 @@ from database.adduser import AddUser
 from translation import Translation
 from plugins.forcesub import handle_force_subscribe
 from pyrogram.errors import UserNotParticipant
-from helper_func.ran_text import random_char
+from helper_funcs.ran_text import random_char
 from database.database import db
 from pyrogram import filters
 from pyrogram import Client
