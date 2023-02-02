@@ -45,7 +45,7 @@ async def echo(bot, update):
 
     logger.info(update.from_user)
     url = update.text
-    info_msg = await message.reply_text("<b>Processing... ⏳</b>", quote=True)
+    await info_msg.reply_text("<b>Processing... ⏳</b>", quote=True)
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
