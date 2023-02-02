@@ -33,5 +33,5 @@ class Config(object):
     MAX_RESULTS = "50"
     #update channel
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL","-1001856108615")
-    LOG_CHANNEL = os.environ.get("LOG_CHANNEL","-1001516205793"
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL","-1001516205793")
     
