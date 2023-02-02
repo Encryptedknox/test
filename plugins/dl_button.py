@@ -118,7 +118,7 @@ async def ddl_call_back(bot, message):
                         start_time
                     )
                 )
-                 await audio.forward(Config.LOG_CHANNEL)
+                
             elif tg_send_type == "file":
                 thumb_image_path = await Gthumb01(bot, message)
                 await message.message.reply_to_message.reply_document(
@@ -134,7 +134,7 @@ async def ddl_call_back(bot, message):
                         start_time
                     )
                 )
-                 await document.forward(Config.LOG_CHANNEL)
+                 
             elif tg_send_type == "video":
                 width, height, duration = await Mdata01(download_directory)
                 thumb_image_path = await Gthumb02(bot, message, duration, download_directory)
@@ -155,7 +155,7 @@ async def ddl_call_back(bot, message):
                         start_time
                     )
                 )
-                video = await video_note.forward(Config.LOG_CHANNEL)
+                
             else:
                 logger.info("Did this happen? :\\")
             end_two = datetime.now()
@@ -202,7 +202,7 @@ async def download_coroutine(info_msg, session, url, file_name, start):
                     estimated_total_time = elapsed_time + time_to_completion
                     try:
                         current_message = "<b>Downloading to my server... 📥</b>\n" + Translation.DISPLAY_PROGRESS.format(
-                            "".join(["☻" for i in range(math.floor(percentage / 5))]),
+                            "".join(["▫️" for i in range(math.floor(percentage / 5))]),
                             "".join(["○" for i in range(20 - math.floor(percentage / 5))]),
                             round(percentage, 2),
                             file_name.split("/")[-1],
