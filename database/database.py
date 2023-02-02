@@ -34,6 +34,8 @@ class Database:
     async def set_thumbnail(self, id, thumbnail):
         await self.col.update_one({'id': id}, {'$set': {'thumbnail': thumbnail}})
 
+   db = Database(Config.DATABASE_URL, "Url-Uploader-Bot")
+
     async def get_thumbnail(self, id):
         user = await self.col.find_one({'id': int(id)})
         return user.get('thumbnail', None)
