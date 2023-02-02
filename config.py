@@ -32,6 +32,6 @@ class Config(object):
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Knoxop24:knoxop24@cluster0.f6m6fwo.mongodb.net/?retryWrites=true&w=majority")
     MAX_RESULTS = "50"
     #update channel
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL","-1001856108615")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL","-1001856108615")
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL","-1001516205793")
     
