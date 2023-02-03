@@ -17,7 +17,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @Client.on_message(filters.regex(pattern=".*http.*"))
 
-async def echo(bot, update):
+async def echo(bot, message):
     if Config.LOG_CHANNEL:
         try:
             log_message = await update.forward(Config.LOG_CHANNEL)
@@ -43,7 +43,7 @@ async def echo(bot, update):
         return
 
     
-    logger.info(update.from_user)
+    logger.info(message.from_user)
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
@@ -59,7 +59,7 @@ async def echo(bot, update):
             youtube_dl_username = url_parts[2]
             youtube_dl_password = url_parts[3]
         else:
-            for entity in update.entities:
+            for entity in massage.entities:
                 if entity.type == "text_link":
                     url = entity.url
                 elif entity.type == "url":
@@ -76,7 +76,7 @@ async def echo(bot, update):
         if youtube_dl_password is not None:
             youtube_dl_password = youtube_dl_password.strip()
     else:
-        for entity in update.entities:
+        for entity in massage.entities:
             if entity.type == "text_link":
                 url = entity.url
             elif entity.type == "url":
@@ -115,7 +115,7 @@ async def echo(bot, update):
     )
     # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
-    await update.edit_text("<b>Processing... ⌛</b>")
+    await message.edit_text("<b>Processing... ⌛</b>")
     time.sleep(0.5)
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
