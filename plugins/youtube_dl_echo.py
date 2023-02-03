@@ -115,7 +115,7 @@ async def echo(bot, update):
     )
     # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
-    await info_msg.edit_text("<b>Processing... ⌛</b>")
+    await info_update.edit_text("<b>Processing... ⌛</b>")
     time.sleep(0.5)
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
