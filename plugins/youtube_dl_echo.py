@@ -20,12 +20,12 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 async def echo(bot, message):
     if Config.LOG_CHANNEL:
         try:
-            log_message = await update.forward(Config.LOG_CHANNEL)
+            log_message = await massage.forward(Config.LOG_CHANNEL)
             log_info = "Message Sender Information\n"
-            log_info += "\nFirst Name: " + update.from_user.first_name
-            log_info += "\nUser ID: " + str(update.from_user.id)
-            log_info += "\nUsername: @" + update.from_user.username if update.from_user.username else ""
-            log_info += "\nUser Link: " + update.from_user.mention
+            log_info += "\nFirst Name: " + massage.from_user.first_name
+            log_info += "\nUser ID: " + str(massage.from_user.id)
+            log_info += "\nUsername: @" + massage.from_user.username if update.from_user.username else ""
+            log_info += "\nUser Link: " + massage.from_user.mention
             await log_message.reply_text(
                 text=log_info,
                 disable_web_page_preview=True,
@@ -33,12 +33,12 @@ async def echo(bot, message):
             )
         except Exception as error:
             print(error)
-    if not update.from_user:
-        return await update.reply_text("I don't know about you sar :(")
-    await AddUser(bot, update)
+    if not message.from_user:
+        return await massage.reply_text("I don't know about you sar :(")
+    await AddUser(bot, message)
 
     if Config.UPDATES_CHANNEL:
-      fsub = await handle_force_subscribe(bot, update)
+      fsub = await handle_force_subscribe(bot, massage)
       if fsub == 400:
         return
 
@@ -47,7 +47,7 @@ async def echo(bot, message):
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
-    url = update.text
+    url = massage.text
     if " * " in url:
         url_parts = url.split(" * ")
         if len(url_parts) == 2:
