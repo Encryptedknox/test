@@ -42,11 +42,12 @@ async def echo(bot, update):
       if fsub == 400:
         return
 
-
+    
     logger.info(update.from_user)
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
+    url = ('message.text')
     url = message.text
     if " * " in url:
         url_parts = url.split(" * ")
