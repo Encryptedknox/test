@@ -17,7 +17,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @Client.on_message(filters.regex(pattern=".*http.*"))
 
-async def echo(bot, message, update):
+async def echo(bot, update):
+async def echo(bot, message):
     if Config.LOG_CHANNEL:
         try:
             log_message = await update.forward(Config.LOG_CHANNEL)
