@@ -17,7 +17,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @Client.on_message(filters.regex(pattern=".*http.*"))
 
-async def echo(bot, update):
+async def echo(bot, message):
     if Config.LOG_CHANNEL:
         try:
             log_message = await update.forward(Config.LOG_CHANNEL)
@@ -47,7 +47,7 @@ async def echo(bot, update):
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
-    url = update.text
+    url = message.text
     if " * " in url:
         url_parts = url.split(" * ")
         if len(url_parts) == 2:
