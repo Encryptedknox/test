@@ -42,7 +42,7 @@ async def echo(bot, message):
       if fsub == 400:
         return
 
-    
+    info_msg = await message.reply_text("<b>Processing... ⏳</b>", quote=True)
     logger.info(message.from_user)
     youtube_dl_username = None
     youtube_dl_password = None
