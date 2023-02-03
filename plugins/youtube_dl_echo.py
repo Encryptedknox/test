@@ -18,7 +18,6 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 @Client.on_message(filters.regex(pattern=".*http.*"))
 
 async def echo(bot, update):
-async def echo(bot, message):
     if Config.LOG_CHANNEL:
         try:
             log_message = await update.forward(Config.LOG_CHANNEL)
@@ -48,7 +47,7 @@ async def echo(bot, message):
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
-    url = message.text
+    url = update.text
     if " * " in url:
         url_parts = url.split(" * ")
         if len(url_parts) == 2:
@@ -60,7 +59,7 @@ async def echo(bot, message):
             youtube_dl_username = url_parts[2]
             youtube_dl_password = url_parts[3]
         else:
-            for entity in message.entities:
+            for entity in update.entities:
                 if entity.type == "text_link":
                     url = entity.url
                 elif entity.type == "url":
@@ -77,7 +76,7 @@ async def echo(bot, message):
         if youtube_dl_password is not None:
             youtube_dl_password = youtube_dl_password.strip()
     else:
-        for entity in message.entities:
+        for entity in update.entities:
             if entity.type == "text_link":
                 url = entity.url
             elif entity.type == "url":
