@@ -203,7 +203,7 @@ async def download_coroutine(info_msg, session, url, file_name, start):
                     try:
                         current_message = "<b>Downloading to my server... 📥</b>\n" + Translation.DISPLAY_PROGRESS.format(
                             "".join(["☻" for i in range(math.floor(percentage / 5))]),
-                            "".join(["○" for i in range(10 - math.floor(percentage / 5))]),
+                            "".join(["○" for i in range(15 - math.floor(percentage / 5))]),
                             round(percentage, 2),
                             file_name.split("/")[-1],
                             humanbytes(downloaded),
