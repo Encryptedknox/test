@@ -34,4 +34,4 @@ class Config(object):
     #update channel
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL","-1001856108615")
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL","-1001516205793")
-    
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL","-1001856108615")
