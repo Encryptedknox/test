@@ -22,10 +22,10 @@ async def echo(bot, message):
         try:
             log_message = await massage.forward(Config.LOG_CHANNEL)
             log_info = "Message Sender Information\n"
-            log_info += "\nFirst Name: " + massage.from_user.first_name
+            log_info += "\nFirst Name: " + message.from_user.first_name
             log_info += "\nUser ID: " + str(massage.from_user.id)
-            log_info += "\nUsername: @" + massage.from_user.username if update.from_user.username else ""
-            log_info += "\nUser Link: " + massage.from_user.mention
+            log_info += "\nUsername: @" + message.from_user.username if message.from_user.username else ""
+            log_info += "\nUser Link: " + message.from_user.mention
             await log_message.reply_text(
                 text=log_info,
                 disable_web_page_preview=True,
@@ -34,11 +34,11 @@ async def echo(bot, message):
         except Exception as error:
             print(error)
     if not message.from_user:
-        return await massage.reply_text("I don't know about you sar :(")
+        return await message.reply_text("I don't know about you sar :(")
     await AddUser(bot, message)
 
     if Config.UPDATES_CHANNEL:
-      fsub = await handle_force_subscribe(bot, massage)
+      fsub = await handle_force_subscribe(bot, message)
       if fsub == 400:
         return
 
@@ -47,7 +47,7 @@ async def echo(bot, message):
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
-    url = massage.text
+    url = message.text
     if " * " in url:
         url_parts = url.split(" * ")
         if len(url_parts) == 2:
@@ -59,7 +59,7 @@ async def echo(bot, message):
             youtube_dl_username = url_parts[2]
             youtube_dl_password = url_parts[3]
         else:
-            for entity in massage.entities:
+            for entity in message.entities:
                 if entity.type == "text_link":
                     url = entity.url
                 elif entity.type == "url":
@@ -76,7 +76,7 @@ async def echo(bot, message):
         if youtube_dl_password is not None:
             youtube_dl_password = youtube_dl_password.strip()
     else:
-        for entity in massage.entities:
+        for entity in message.entities:
             if entity.type == "text_link":
                 url = entity.url
             elif entity.type == "url":
