@@ -17,7 +17,7 @@ async def handle_force_subscribe(bot, message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=message.from_user.id,
-                text="Sorry , You are Banned. Contact My [Support Group](https://t.me/knoxbots).",
+                text="Sorry , You are Banned. Contact My [Support Group](https://t.me/knoxprojects).",
                 parse_mode="markdown",
                 disable_web_page_preview=True,
                 reply_to_message_id=message.message_id,
