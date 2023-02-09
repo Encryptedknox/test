@@ -1,12 +1,10 @@
 class Translation(object):
-    START_TEXT = """𝙷𝚒 {} 🤗,
-𝙸'𝚖 <b>𝚄𝚛𝚕 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚛 𝙱𝚘𝚝! ✨</b>
-
-𝚂𝚎𝚗𝚍 𝚖𝚎 𝚊 𝚍𝚒𝚛𝚎𝚌𝚝 𝚕𝚒𝚗𝚔 𝚊𝚗𝚍 𝙸 𝚠𝚒𝚕𝚕 𝚞𝚙𝚕𝚘𝚊𝚍 𝚒𝚝 𝚝𝚘 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝚊𝚜 𝚊 𝚏𝚒𝚕𝚎/𝚟𝚒𝚍𝚎𝚘.</𝚋>
-/help 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚍𝚎𝚝𝚊𝚒𝚕𝚜!
-
-<b>𝙹𝚘𝚒𝚗 @knoxprojects"""
-    ADD_CAPTION_HELP = """𝚂𝚎𝚕𝚎𝚌𝚝 𝚊𝚗 𝚞𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚏𝚒𝚕𝚎/𝚟𝚒𝚍𝚎𝚘 𝚘𝚛 𝚏𝚘𝚛𝚠𝚊𝚛𝚍 𝚖𝚎 <b>𝙰𝚗𝚢 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝙵𝚒𝚕𝚎</b> 𝚊𝚗𝚍 𝚓𝚞𝚜𝚝 𝚠𝚛𝚒𝚝𝚎 𝚝𝚑𝚎 𝚝𝚎𝚡𝚝 𝚢𝚘𝚞 𝚠𝚊𝚗𝚝 𝚝𝚘 𝚋𝚎 𝚘𝚗 𝚝𝚑𝚎 𝚏𝚒𝚕𝚎 <b>𝚊𝚜 𝚊 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚝𝚑𝚎 𝚏𝚒𝚕𝚎</b> 𝚊𝚗𝚍 𝚝𝚑𝚎 𝚝𝚎𝚡𝚝 𝚢𝚘𝚞 𝚠𝚛𝚘𝚝𝚎 𝚠𝚒𝚕𝚕 𝚋𝚎 𝚊𝚝𝚝𝚊𝚌𝚑𝚎𝚍 𝚊𝚜 𝚝𝚑𝚎 𝚌𝚊𝚙𝚝𝚒𝚘𝚗! 🤩
+    START_TEXT = """Hi {} 🤗,
+I'm <b>Url Uploader Bot! ✨</b>
+Send me a direct link and I will upload it to telegram as a file/video.</b>
+/help for more details!
+<b>Join @knoxprojects"""
+    ADD_CAPTION_HELP = """Select an uploaded file/video or forward me <b>Any Telegram File</b> and just write the text you want to be on the file <b>as a reply to the file</b> and the text you wrote will be attached as the caption! 🤩
     
 Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> 👇"""
     INCORRECT_REQUEST = """<b>❗Make sure you submit your request correctly❗</b>
@@ -20,7 +18,7 @@ Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> �
 <b>▫️𝚃𝚒𝚖𝚎 𝚕𝚎𝚏𝚝 :</b> <i>{7}</i>"""
     FORMAT_SELECTION = """<b>𝙸𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎𝚗'𝚝 𝚜𝚎𝚝 <a href='{}'>a 𝚝𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕</a> 𝚋𝚎𝚏𝚘𝚛𝚎 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚜𝚎𝚗𝚍 𝚊 𝚙𝚑𝚘𝚝𝚘 𝚗𝚘𝚠.
     
-𝙲𝚑𝚘𝚘𝚜𝚎 𝚢𝚘𝚞𝚛 𝚏𝚘𝚛𝚖𝚊𝚝
+Choose your format
 
 <b>larger than 2 GB not support.</b>"""
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
