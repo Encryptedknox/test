@@ -1,11 +1,11 @@
 class Translation(object):
-    START_TEXT = """Hi {} 🤗,
-I'm <b>Url Uploader Bot! ✨</b>
+    START_TEXT = """𝙷𝚒 {} 🤗,
+𝙸'𝚖 <b>𝚄𝚛𝚕 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚛 𝙱𝚘𝚝! ✨</b>
 
-Send me a direct link and I will upload it to telegram as a file/video.</b>
-/help for more details!
+𝚂𝚎𝚗𝚍 𝚖𝚎 𝚊 𝚍𝚒𝚛𝚎𝚌𝚝 𝚕𝚒𝚗𝚔 𝚊𝚗𝚍 𝙸 𝚠𝚒𝚕𝚕 𝚞𝚙𝚕𝚘𝚊𝚍 𝚒𝚝 𝚝𝚘 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖 𝚊𝚜 𝚊 𝚏𝚒𝚕𝚎/𝚟𝚒𝚍𝚎𝚘.</𝚋>
+/help 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚍𝚎𝚝𝚊𝚒𝚕𝚜!
 
-<b>Join @knoxprojects"""
+<b>𝙹𝚘𝚒𝚗 @knoxprojects"""
     ADD_CAPTION_HELP = """Select an uploaded file/video or forward me <b>Any Telegram File</b> and just write the text you want to be on the file <b>as a reply to the file</b> and the text you wrote will be attached as the caption! 🤩
     
 Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> 👇"""
@@ -15,9 +15,9 @@ Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> �
     DISPLAY_PROGRESS = """[{0}{1}] {2}%
 <i>🗃️ {3}</i>
 
-<b>▫️Finished :</b> <i>{4} of {5}</i>
-<b>▫️Speed :</b> <i>{6}/s</i>
-<b>▫️Time left :</b> <i>{7}</i>"""
+<b>▫️𝙵𝚒𝚗𝚒𝚜𝚑𝚎𝚍 :</b> <i>{4} of {5}</i>
+<b>▫️𝚂𝚙𝚎𝚎𝚍 :</b> <i>{6}/s</i>
+<b>▫️𝚃𝚒𝚖𝚎 𝚕𝚎𝚏𝚝 :</b> <i>{7}</i>"""
     FORMAT_SELECTION = """<b>If you haven't set <a href='{}'>a thumbnail</a> before you can send a photo now. If you don't want to don't worry - You will get an auto genarated thumbnail from the video to your upload </b>
     
 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁
