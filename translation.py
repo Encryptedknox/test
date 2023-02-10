@@ -13,11 +13,11 @@ Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> �
     
 /help for more details!"""
     DISPLAY_PROGRESS = """[{0}{1}] {2}%
-    🗃️ {3}
+  🗃️ {3}
 
-  ▫️𝙵𝚒𝚗𝚒𝚜𝚑𝚎𝚍 : {4} of {5}
-  ▫️𝚂𝚙𝚎𝚎𝚍 : {6}/s
-  ▫️𝚃𝚒𝚖𝚎 𝚕𝚎𝚏𝚝 : {7}"""
+ ▫️𝙵𝚒𝚗𝚒𝚜𝚑𝚎𝚍 : {4} of {5}
+ ▫️𝚂𝚙𝚎𝚎𝚍 : {6}/s
+ ▫️𝚃𝚒𝚖𝚎 𝚕𝚎𝚏𝚝 : {7}"""
     FORMAT_SELECTION = """𝙸𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎𝚗'𝚝 𝚜𝚎𝚝 <a href='{}'>a 𝚝𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕</a> 𝚋𝚎𝚏𝚘𝚛𝚎 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚜𝚎𝚗𝚍 𝚊 𝚙𝚑𝚘𝚝𝚘 𝚗𝚘𝚠.
     
 Choose your format
