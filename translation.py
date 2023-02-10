@@ -13,30 +13,30 @@ Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> �
     
 /help for more details!"""
     DISPLAY_PROGRESS = """[{0}{1}] {2}%
-<i>🗃️ {3}</i>
+    🗃️ {3}
 
-<b>▫️𝙵𝚒𝚗𝚒𝚜𝚑𝚎𝚍 :</b> <i>{4} of {5}</i>
-<b>▫️𝚂𝚙𝚎𝚎𝚍 :</b> <i>{6}/s</i>
-<b>▫️𝚃𝚒𝚖𝚎 𝚕𝚎𝚏𝚝 :</b> <i>{7}</i>"""
-    FORMAT_SELECTION = """<b>𝙸𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎𝚗'𝚝 𝚜𝚎𝚝 <a href='{}'>a 𝚝𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕</a> 𝚋𝚎𝚏𝚘𝚛𝚎 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚜𝚎𝚗𝚍 𝚊 𝚙𝚑𝚘𝚝𝚘 𝚗𝚘𝚠.
+  ▫️𝙵𝚒𝚗𝚒𝚜𝚑𝚎𝚍 : {4} of {5}
+  ▫️𝚂𝚙𝚎𝚎𝚍 : {6}/s
+  ▫️𝚃𝚒𝚖𝚎 𝚕𝚎𝚏𝚝 : {7}"""
+    FORMAT_SELECTION = """𝙸𝚏 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎𝚗'𝚝 𝚜𝚎𝚝 <a href='{}'>a 𝚝𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕</a> 𝚋𝚎𝚏𝚘𝚛𝚎 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚜𝚎𝚗𝚍 𝚊 𝚙𝚑𝚘𝚝𝚘 𝚗𝚘𝚠.
     
 Choose your format
 
-<b>larger than 2 GB not support.</b>"""
+  larger than 2 GB not support."""
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     DOWNLOAD_START = """<b>File detected:</b> {}
     
 <b>Downloading to my server... </b>
 
-Please wait uploading will start as soon as possible 😎"""
+Please wait uploading will start as soon as possible """
     UPLOAD_START = "<b>Uploading to Telegram... </b>"
     RCHD_TG_API_LIMIT = """<b>❗The file couldn't be uploaded❗</b>
 Sorry. I cannot upload files greater than 2GB due to Telegram API limitations.
 
-<b>▫️File detected:</b> <i>{}</i>
-<b>▫️Downloaded:</b> <i>in {} seconds</i>
-<b>▫️Detected file size:</b> <i>{}</i>"""
+ ▫️File detected: {}
+ ▫️Downloaded: in {} seconds
+ ▫️Detected file size: {}"""
     UNKNOWN_ERROR = """<b>❗UNKNOWN ERROR❗</b>
 I don't know what just happened 🙃
 But I'm going to find out and fix it as soon as possible 🧐"""
