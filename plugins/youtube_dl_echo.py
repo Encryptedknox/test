@@ -42,7 +42,7 @@ async def echo(bot, message):
       if fsub == 400:
         return
 
-    info_msg = await message.reply_text("<b>𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐... ⏳</b>", quote=True)
+    info_msg = await message.reply_text("<b>Processing... ⏳</b>", quote=True)
     logger.info(message.from_user)
     youtube_dl_username = None
     youtube_dl_password = None
@@ -115,7 +115,7 @@ async def echo(bot, message):
     )
     # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
-    await info_msg.edit_text("<b>𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐... ⌛</b>")
+    await info_msg.edit_text("<b>Processing... ⌛</b>")
     time.sleep(0.5)
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
