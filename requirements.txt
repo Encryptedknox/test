@@ -1,5 +1,5 @@
 pyrogram
-git+https://github.com/Encryptedknox/dlp
+ytdlp
 motor
 dnspython
 Pillow
