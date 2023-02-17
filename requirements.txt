@@ -1,4 +1,4 @@
-pyrogram==1.4.16
+pyrogram
 git+https://github.com/Encryptedknox/dlp
 motor
 dnspython
@@ -10,8 +10,8 @@ tgcrypto
 aiofiles
 bs4
 lk21
-Flask==2.2.2
-gunicorn==20.1.0
+Flask
+gunicorn
 beautifulsoup4
 numpy
 olefile
