@@ -6,7 +6,7 @@ Send me a direct link and I will upload it to telegram as a file/video.</b>
 <b>Join @knoxbots"""
     ADD_CAPTION_HELP = """Select an uploaded file/video or forward me <b>Any Telegram File</b> and just write the text you want to be on the file <b>as a reply to the file</b> and the text you wrote will be attached as the caption! 🤩
     
-Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> 👇"""
+Ex: <a href='https://telegra.ph/file/0d4cf1d5677dda9311135.png'>See This!</a> 👇"""
     INCORRECT_REQUEST = """Make sure you submit your request correctly
     
 /help for more details!"""
@@ -33,7 +33,7 @@ Sorry. I cannot upload files greater than 2GB due to Telegram API limitations.
     UNKNOWN_ERROR = """Unknown error"""
     AFTER_SUCCESSFUL_UPLOAD_MSG = " Thanks for using @knoxprojects."
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = """◽ Downloaded in <b>{} seconds</b>
-<i>◽ Uploaded in <b>{} seconds</b></i>"""
+ ◽ Uploaded in <b>{} seconds</b>"""
     SAVED_CUSTOM_THUMB_NAIL = "◽ Custom video/file thumbnail saved. This image will be used in the video/file."
     DEL_ETED_CUSTOM_THUMB_NAIL = "◽ Custom thumbnail cleared succesfully."
     CUSTOM_CAPTION_UL_FILE = "{}"
@@ -69,7 +69,7 @@ If you don't send a thumbnail the video/file will be uploaded with an auto gener
    
 <b>👉 Special feature: Set caption to any file you want! ✨</b>
 🔹 Select an uploaded file/video or forward me <b>Any Telegram File</b> and just write the text you want to be on the file <b>as a reply to the file</b> by selecting it (as replying to a message) and the text you wrote will be attached as caption! 🤩
-Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>Send Like This! It's Easy</a> 🥳"""
+Ex: <a href='https://telegra.ph/file/0d4cf1d5677dda9311135.png'>Send Like This! It's Easy</a> 🥳"""
     REPLY_TO_MEDIA_ALBUM_TO_GEN_THUMB = "Reply /generatecustomthumbnail to a media album, to generate custom thumbail."
     ERR_ONLY_TWO_MEDIA_IN_ALBUM = """Media Album should contain only two photos. Please re-send the media album, and then try again, or send only two photos in an album."
 You can use /rename command after receiving file to rename it with custom thumbnail support.
