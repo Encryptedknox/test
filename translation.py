@@ -4,6 +4,7 @@ I'm <b>Url Uploader Bot! ✨</b>
 
 Send me a direct link and I will upload it to telegram as a file/video.</b>
 /help for more details!
+
 <b>Join @knoxprojects"""
     ADD_CAPTION_HELP = """Select an uploaded file/video or forward me <b>Any Telegram File</b> and just write the text you want to be on the file <b>as a reply to the file</b> and the text you wrote will be attached as the caption! 🤩
     
@@ -18,7 +19,7 @@ Ex: <a href='https://telegra.ph/file/0d4cf1d5677dda9311135.png'>See This!</a> �
 ▫️ Time Left :</b> {7}"""
     FORMAT_SELECTION = """<b> thumbnail will automatically generated if you not set <b>
     
-𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁
+Select and choose format 
 <b>larger than 2 GB not support.</b>"""
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
