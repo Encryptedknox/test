@@ -15,7 +15,7 @@ Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> �
 ▫️ Finished :</b> {4} of {5}
 ▫️ Speed :</b> {6}/s
 ▫️ Time Left :</b> {7}"""
-    FORMAT_SELECTION = """<b>If you haven't set <a href='{}'>a thumbnail</a> before you can send a photo now. If you don't want to don't worry - You will get an auto genarated thumbnail from the video to your upload </b>
+    FORMAT_SELECTION = """<b> thumbnail will automatically generated if you not set <b>
     
 𝗦𝗲𝗹𝗲𝗰𝘁 𝗔𝗻𝗱 𝗖𝗵𝗼𝘀𝗲 𝗬𝗼𝘂𝗿 𝗙𝗼𝗿𝗺𝗮𝘁
 <b>larger than 2 GB not support.</b>"""
@@ -23,7 +23,7 @@ Ex: <a href='https://telegra.ph/file/198bcda5944f787373122.jpg'>See This!</a> �
 URL | filename | username | password"""
     DOWNLOAD_START = """<b>File detected:</b> {}
     
-<b>Downloading... </b>"""
+<b>Initiating download... </b>"""
     UPLOAD_START = "<b>Uploading to Telegram... </b>"
     RCHD_TG_API_LIMIT = """<b>The file couldn't be uploaded</b>
 Sorry. I cannot upload files greater than 2GB due to Telegram API limitations.
