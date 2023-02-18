@@ -1,4 +1,4 @@
-pyrogram
+pyrogram==1.4.16
 yt-dlp
 motor
 dnspython
@@ -10,8 +10,8 @@ tgcrypto
 aiofiles
 bs4
 lk21
-Flask
-gunicorn
+Flask==2.2.2
+gunicorn==20.1.0
 beautifulsoup4
 numpy
 olefile
