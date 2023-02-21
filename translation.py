@@ -91,3 +91,8 @@ You can use /rename command after receiving file to rename it with custom thumbn
 **🇵🇲 Framework** : [Pyrogram 1.8.30](https://docs.pyrogram.org/)
 **🦊 Developer** : [ACE KNOX](https://telegram.me/aceknox)
 """
+   COMMANDS = """
+ /start
+ /help
+ /about
+ /donate"""
