@@ -92,6 +92,13 @@ async def donate(bot, update):
         Translation.DONATE,
         quote=True
     )
+@Clinton.on_message(filters.private & filters.command(["commands"]))
+async def commands(bot, update):
+    await AddUser(bot, update)
+    await update.reply_text(
+        Translation.COMMANDS,
+        quote=True
+    )
 
 @Clinton.on_message(filters.private & filters.command(["addcaption"]))
 async def add_caption_help(bot, update):
