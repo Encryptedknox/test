@@ -97,7 +97,7 @@ async def commands(bot, update):
     await AddUser(bot, update)
     await update.reply_text(
         Translation.COMMANDS,
-        quote=False
+        quote=True
     )
 
 @Clinton.on_message(filters.private & filters.command(["addcaption"]))
@@ -113,7 +113,7 @@ async def about(bot, update):
     await AddUser(bot, update)
     await update.reply_text(
         Translation.ABOUT,
-        quote=False
+        quote=True
     )
 
 @Clinton.on_message(filters.private & filters.command(["start"]))
