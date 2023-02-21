@@ -92,8 +92,8 @@ You can use /rename command after receiving file to rename it with custom thumbn
 **🦊 Developer** : [ACE KNOX](https://telegram.me/aceknox)
 """
    COMMANDS ="""
- /start
- /help
- /about
- /donate
+ ◽ /start - check status
+ ◽ /help - for more
+ ◽ /about - me
+ ◽ /donate - contribution
 """
