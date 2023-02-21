@@ -101,6 +101,14 @@ async def add_caption_help(bot, update):
         quote=True
     )
 
+@Clinton.on_message(filters.private & filters.command(["about"]))
+async def about(bot, update):
+    await AddUser(bot, update)
+    await update.reply_text(
+        Translation.ABOUT,
+        quote=True
+    )
+
 @Clinton.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     await AddUser(bot, update)
