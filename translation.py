@@ -95,4 +95,5 @@ You can use /rename command after receiving file to rename it with custom thumbn
  /start
  /help
  /about
- /donate"""
+ /donate
+"""
