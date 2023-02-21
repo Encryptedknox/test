@@ -82,17 +82,17 @@ You can use /rename command after receiving file to rename it with custom thumbn
     DONATE = """ appreciate my work 
              https://www.buymeacoffee.com/aceknox """
     ABOUT =""" 
-**♻️ My Name**   : [Url Uploader Bot](http://t.me/Urluploaderadvancedbot)
-**🌀 Channel**   : [Knox Bots](https://t.me/knoxprojects)
-**💡 Support**   : [Knox Bots](https://t.me/knoxsupport)
-**🔋 Source**    : [Click Here](https://github.com/aceknox)
-**⚕️ Server**    : [Doprax](https://doprax.com/)
-**📑 Language**  : [Python 3.10.5](https://www.python.org/)
-**🇵🇲 Framework** : [Pyrogram 1.8.30](https://docs.pyrogram.org/)
-**🦊 Developer** : [ACE KNOX](https://telegram.me/aceknox)
+◽ My Name   : [Url Uploader Bot](http://t.me/Urluploaderadvancedbot)
+◽ Channel   : [Knox Bots](https://t.me/knoxprojects)
+◽ Support   : [Knox Bots](https://t.me/knoxsupport)
+◽ Source    : [Click Here](https://github.com/aceknox)
+◽ Servern.  : [Doprax](https://doprax.com/)
+◽ Language  : [Python 3.10.5](https://www.python.org/)
+◽ Framework : [Pyrogram 1.8.30](https://docs.pyrogram.org/)
+◽ Developer : [ACE KNOX](https://telegram.me/aceknox)
 """
     COMMANDS = """
- ◽ /start - check status
+  ◽ /start - check status
  ◽ /help - for more
  ◽ /about - me
  ◽ /donate - contribution
