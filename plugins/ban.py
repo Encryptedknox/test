@@ -5,7 +5,7 @@ from database.database import Database
 from pyrogram import filters
 from pyrogram import Client
 from config import Config
-from Config import (
+from config import (
     DATABASE_URL,
     SESSION_NAME
 )
