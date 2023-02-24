@@ -4,8 +4,8 @@ import os
 from database.database import Database
 from pyrogram import filters
 from pyrogram import Client
-DATABASE_URL = mongodb+srv://Knoxop24:knoxop24@cluster0.f6m6fwo.mongodb.net/?retryWrites=true&w=majority
-SESSION_NAME = URLUPLOADERBOT
+DATABASE_URL = os.environ.get("DATABASE_URL"," mongodb+srv://Knoxop24:knoxop24@cluster0.f6m6fwo.mongodb.net/?retryWrites=true&w=majority")
+SESSION_NAME = os.environ.get("SESSION_NAME","URLUPLOADERBOT")
 db = Database(DATABASE_URL, SESSION_NAME)
 CURRENT_PROCESSES = {}
 CHAT_FLOOD = {}
