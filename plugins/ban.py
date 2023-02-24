@@ -5,10 +5,8 @@ from database.database import Database
 from pyrogram import filters
 from pyrogram import Client
 from config import Config
-from config import (
-    DATABASE_URL,
-    SESSION_NAME
-)
+from config import DATABASE_URL
+from config import SESSION_NAME
 
 db = Database(DATABASE_URL, SESSION_NAME)
 CURRENT_PROCESSES = {}
