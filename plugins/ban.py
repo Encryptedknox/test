@@ -1,7 +1,7 @@
 import traceback
 import os
 
-from database import Database
+from database.database import Database
 from pyrogram import filters
 from pyrogram import Client
 
